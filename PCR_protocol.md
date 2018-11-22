@@ -1,5 +1,5 @@
 # PCR
 
-## Mix
+link to pcr protocol: https://github.com/Sarahxys/Evans_lab_protocols/blob/master/PCR_and_agarose_gels.md
 
-- ddH2O: 6.25ul
+
