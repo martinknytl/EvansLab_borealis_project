@@ -20,5 +20,5 @@ cd Google\ Drive/notas_HP/Dokumenty/jmena_hesla/
 command or file name inside a paragraph `filename.perl`
 
 - [ ] check box - uncheck
-- [ x ] check box - checked
+- [x] check box - checked
 
