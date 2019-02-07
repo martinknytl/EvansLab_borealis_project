@@ -17,5 +17,5 @@ cd Google\ Drive/pracovni\ slozka/McMaster/
 cd Google\ Drive/notas_HP/Dokumenty/jmena_hesla/
 ```
 
-command or file name inside a paragraph `filename.perl`
+command or file name inside a paragraph ```filename.perl```
 
