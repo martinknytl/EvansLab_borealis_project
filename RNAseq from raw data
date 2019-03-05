@@ -1,5 +1,3 @@
 dowloading of files:
 
-```bash
-scp -r ben@graham.computecanada.ca:/home/ben/project/ben/2019_XB_gonad_RNAseq/ .
-```
+`scp -r ben@graham.computecanada.ca:/home/ben/project/ben/2019_XB_gonad_RNAseq/ .`
