@@ -1,2 +1,2 @@
-# aaa
-dowloading of files: `scp -r ben@graham.computecanada.ca:/home/ben/project/ben/2019_XB_gonad_RNAseq/ .
+dowloading of files: open screen; make a directory; open it; `scp -r ben@graham.computecanada.ca:/home/ben/project/ben/2019_XB_gonad_RNAseq/ .
+FastQC: open screen; open directory with downloaded data; use the commend: `for i in *fastq.gz ; do fastqc $i; done`
