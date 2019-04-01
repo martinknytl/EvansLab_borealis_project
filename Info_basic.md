@@ -18,7 +18,9 @@ If you want to make a directory, type `mkdir` \<directory name\>.
 
 If you want to remove a file type `rm -f `\<filename\>; to remove a directory `rm -rf`\<filename\>.
 
-If you want to clean the screen, do `clear`
+If you want to clean the screen, do `clear`.
+
+If you want to cancel job type `control c`.
 
 # Top
 If you want to check the status of the job, do `top`.
