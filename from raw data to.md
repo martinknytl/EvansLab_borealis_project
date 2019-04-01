@@ -11,6 +11,9 @@ fastqc files with .html prefix will be created in same folder as raw data
 3)go to folder where you want to create folder with fastqc.html files, make a directory 'mkdir fastqc_raw' ; dowload files to my googledisk account using command: `scp martin@info.mcmaster.ca:/home/martin/borealis_gonad_transcriptome/data/raw_data/2019_XB_gonad_RNAseq/*fastqc.html .` ; open all html files using `open *`
 
 4)Scynthe
+```
+for i in *fastq.gz ; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/xue/software/scythe-master/scythe/2019_XB_gonad_RNAseq -a /home/xue/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
+```
 
 5)Trimmomatic
 
@@ -24,7 +27,6 @@ java -jar /usr/local/trimmomatic/trimmomatic-0.36.jar PE -phred33 -trimlog trim_
 
 ```
 java -jar /usr/local/trimmomatic/trimmomatic-0.36.jar PE -phred33 -trimlog trim_out.txt /home/martin/borealis_gonad_transcriptome/data/raw_data/XBO15_R1.fastq.gz /home/martin/borealis_gonad_transcriptome/data/raw_data/XBO15_R2.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO15_R1_paired.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO15_R1_unpaired.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO15_R2_paired.fastq.gz  /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO15_R2_unpaired.fastq.gz ILLUMINACLIP:/usr/local/trimmomatic/adapters/TruSeq2-PE.fa:2:30:10 SLIDINGWINDOW:4:15 MINLEN:36
+```
 
-
-for i in *fastq.gz ; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/xue/software/scythe-master/scythe/2019_XB_gonad_RNAseq -a /home/xue/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
 
