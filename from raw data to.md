@@ -1,21 +1,21 @@
 # from raw data sent from sequence centre
-1)dowload files: open screen; make a directory; open it; 
+**1)dowload files: open screen; make a directory; open it;** 
 ```
 scp -r ben@graham.computecanada.ca:/home/ben/project/ben/2019_XB_gonad_RNAseq/ .
 ```
-2)FastQC: open screen; open directory with downloaded data; use the commend: 
+**2)FastQC: open screen; open directory with downloaded data; use the command:**
 ```
 for i in *fastq.gz ; do fastqc $i; done
 ```
 fastqc files with .html prefix will be created in same folder as raw data
-3)go to folder where you want to create folder with fastqc.html files, make a directory 'mkdir fastqc_raw' ; dowload files to my googledisk account using command: `scp martin@info.mcmaster.ca:/home/martin/borealis_gonad_transcriptome/data/raw_data/2019_XB_gonad_RNAseq/*fastqc.html .` ; open all html files using `open *`
+**3)go to folder where you want to create folder with fastqc.html files, make a directory 'mkdir fastqc_raw' ; dowload files to my googledisk account using command:** `scp martin@info.mcmaster.ca:/home/martin/borealis_gonad_transcriptome/data/raw_data/2019_XB_gonad_RNAseq/*fastqc.html .` ; open all html files using `open *`
 
-4)Scynthe
+**4)Scynthe**
 ```
 for i in *fastq.gz ; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/xue/software/scythe-master/scythe/2019_XB_gonad_RNAseq -a /home/xue/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
 ```
 
-5)Trimmomatic
+**5)Trimmomatic
 
 one sample by one
 
