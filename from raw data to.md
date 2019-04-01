@@ -14,6 +14,17 @@ fastqc files with .html prefix will be created in same folder as raw data
 
 5)Trimmomatic
 
+one sample by one
+
+launch screen, open screen
+
 ```
-java -jar /home/xue/software/Trimmomatic-0.36/trimmomatic-0.36.jar PE -phred33 -trimlog trim_out.txt /home/martin/borealis_gonad_transcriptome/data/raw_data/2019_XB_gonad_RNAseq/XBO12_R1.fastq.gz /home/martin/borealis_gonad_transcriptome/data/raw_data/2019_XB_gonad_RNAseq/XBO12_R2.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO12_R1_paired.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO12_R1_single.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO12_R2_paired.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO12_R2_single.fastq.gz ILLUMINACLIP:/home/xue/Trimmomatic-0.36/adapters/TruSeq2-PE.fa:2:30:10 SLIDINGWINDOW:4:15 MINLEN:36
+java -jar /usr/local/trimmomatic/trimmomatic-0.36.jar PE -phred33 -trimlog trim_out.txt /home/martin/borealis_gonad_transcriptome/data/raw_data/XBO8_R1.fastq.gz /home/martin/borealis_gonad_transcriptome/data/raw_data/XBO8_R2.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO8_R1_paired.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO8_R1_unpaired.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO8_R2_paired.fastq.gz  /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO8_R2_unpaired.fastq.gz ILLUMINACLIP:/usr/local/trimmomatic/adapters/TruSeq2-PE.fa:2:30:10 SLIDINGWINDOW:4:15 MINLEN:36
 ```
+
+```
+java -jar /usr/local/trimmomatic/trimmomatic-0.36.jar PE -phred33 -trimlog trim_out.txt /home/martin/borealis_gonad_transcriptome/data/raw_data/XBO15_R1.fastq.gz /home/martin/borealis_gonad_transcriptome/data/raw_data/XBO15_R2.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO15_R1_paired.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO15_R1_unpaired.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO15_R2_paired.fastq.gz  /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO15_R2_unpaired.fastq.gz ILLUMINACLIP:/usr/local/trimmomatic/adapters/TruSeq2-PE.fa:2:30:10 SLIDINGWINDOW:4:15 MINLEN:36
+
+
+for i in *fastq.gz ; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/xue/software/scythe-master/scythe/2019_XB_gonad_RNAseq -a /home/xue/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
+
