@@ -8,7 +8,7 @@ To go into one of the machine, do `rsh info113` or `rsh info114`
 
 If you want to cancel a command type `Command .`
 
-If you want to view the contents of a directory type `ls`.
+If you want to view the contents of a directory type `ls` (list files).
 
 If you want to change a directory type `cd `\<directory path\>.
 
