@@ -26,6 +26,8 @@ If you want to clean the screen, do `clear`.
 
 If you want to cancel job type `control c`.
 
+If you need help about ls `ls --help`.
+
 # Top
 If you want to check the status of the job, do `top`.
 
