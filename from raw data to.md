@@ -15,7 +15,7 @@ fastqc files with .html prefix will be created in same folder as raw data
 for i in *fastq.gz ; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/xue/software/scythe-master/scythe/2019_XB_gonad_RNAseq -a /home/xue/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
 ```
 
-**5)Trimmomatic
+**5)Trimmomatic**
 
 one sample by one
 
