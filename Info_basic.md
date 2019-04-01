@@ -12,6 +12,8 @@ If you want to view the contents of a current directory type `ls` (list files).
 
 If you want to view the content of content of "home" and "xxx" directory `ls /home /xxx`
 
+`ls -l /data` `ls /data` doesn't work 
+
 If you want to change a directory type `cd `\<directory path\>.
 
 If you want to know what directory you are in type `pwd`.
