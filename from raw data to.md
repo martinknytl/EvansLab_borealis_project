@@ -25,6 +25,7 @@ for i in *fastq.gz ; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home
 **5)Trimmomatic**
 
 `mkdir trimm_data`
+
 `pwd` /home/martin/borealis_gonad_transcriptome/data/trimm_data
 
 one sample by one
