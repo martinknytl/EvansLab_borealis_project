@@ -1,3 +1,10 @@
+# Basic terms
+bash
+shell
+command 
+argument
+
+
 # Basics for Unix
 
 If you want to login to the cluster `ssh yourname@info.mcmaster.ca`
