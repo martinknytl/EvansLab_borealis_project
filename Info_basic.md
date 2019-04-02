@@ -1,9 +1,13 @@
 # Basic terms
-bash
-shell
-command 
-argument
+bash (vykonavatel textovych prikazu) = comand line interpreter
 
+shell (skorapka, plast)
+
+comand (prikaz) = consists of arguments
+
+argument (argument) = 
+
+prompt (vyzva) = several characters on the begening of line
 
 # Basics for Unix
 
