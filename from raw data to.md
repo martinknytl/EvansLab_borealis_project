@@ -38,7 +38,7 @@ java -jar /usr/local/trimmomatic/trimmomatic-0.36.jar PE -phred33 -trimlog trim_
 you can copy next command before the previous one will finish
 
 ```
-java -jar /usr/local/trimmomatic/trimmomatic-0.36.jar PE -phred33 -trimlog trim_out.txt /home/martin/borealis_gonad_transcriptome/data/raw_data/XBO20_R1.fastq.gz /home/martin/borealis_gonad_transcriptome/data/raw_data/XBO20_R2.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO20_R1_paired.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO20_R1_unpaired.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO20_R2_paired.fastq.gz  /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO20_R2_unpaired.fastq.gz ILLUMINACLIP:/usr/local/trimmomatic/adapters/TruSeq2-PE.fa:2:30:10 SLIDINGWINDOW:4:15 MINLEN:36
+java -jar /usr/local/trimmomatic/trimmomatic-0.36.jar PE -phred33 -trimlog trim_out.txt /home/martin/borealis_gonad_transcriptome/data/raw_data/2019_XB_gonad_RNAseq/XBO33_R1.fastq.gz /home/martin/borealis_gonad_transcriptome/data/raw_data/2019_XB_gonad_RNAseq/XBO33_R2.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO33_R1_paired.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO33_R1_unpaired.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO33_R2_paired.fastq.gz  /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO33_R2_unpaired.fastq.gz ILLUMINACLIP:/usr/local/trimmomatic/adapters/TruSeq2-PE.fa:2:30:10 SLIDINGWINDOW:4:15 MINLEN:36
 ```
 8,12,15,16,17,19,20,21,23,24,26,27,28,29,30,31,32,33,34,35,36
 
