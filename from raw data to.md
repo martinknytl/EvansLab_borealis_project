@@ -51,8 +51,11 @@ java -jar /usr/local/trimmomatic/trimmomatic-0.36.jar PE -phred33 -trimlog trim_
 **7)FastQC**
 
 open screen; open directory with trimmomatic data (trimm_data); use the command:
+
+we do not need unpaired sequences, so comand will be little bit different than in the case of raw data
+
 ```
-for i in *fastq.gz ; do fastqc $i; done
+for i in *_paired.fastq.gz ; do fastqc $i; done
 ```
 fastqc files with .html prefix will be created in folder trimm_data
 
