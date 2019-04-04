@@ -1,4 +1,4 @@
-# from raw data sent from sequence centre
+# From raw data sent from sequence centre to ...
 **1)dowload files: open screen; make a directory; open it;** 
 ```
 scp -r ben@graham.computecanada.ca:/home/ben/project/ben/2019_XB_gonad_RNAseq/ .
