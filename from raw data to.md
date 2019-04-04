@@ -46,7 +46,8 @@ java -jar /usr/local/trimmomatic/trimmomatic-0.36.jar PE -phred33 -trimlog trim_
 ```
 8,12,15,16,17,19,20,21,23,24,26,27,28,29,30,31,32,33,34,35,36
 
-**7)FastQC: open screen; open directory with trimmomatic data (trimm_data); use the command:**
+**7)FastQC** 
+open screen; open directory with trimmomatic data (trimm_data); use the command:
 ```
 for i in *fastq.gz ; do fastqc $i; done
 ```
@@ -57,5 +58,5 @@ go to folder where you want to create folder with fastqc.html files in your PC, 
 ```
 scp martin@info.mcmaster.ca:/home/martin/borealis_gonad_transcriptome/data/raw_data/2019_XB_gonad_RNAseq/*fastqc.html .` ; open all html files using `open *
 ```
-**8) Trinity
+**8) Trinity**
 
