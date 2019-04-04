@@ -57,4 +57,5 @@ go to folder where you want to create folder with fastqc.html files in your PC, 
 ```
 scp martin@info.mcmaster.ca:/home/martin/borealis_gonad_transcriptome/data/raw_data/2019_XB_gonad_RNAseq/*fastqc.html .` ; open all html files using `open *
 ```
+**8) Trinity
 
