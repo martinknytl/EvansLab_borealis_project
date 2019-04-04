@@ -46,7 +46,8 @@ java -jar /usr/local/trimmomatic/trimmomatic-0.36.jar PE -phred33 -trimlog trim_
 ```
 8,12,15,16,17,19,20,21,23,24,26,27,28,29,30,31,32,33,34,35,36
 
-**7)FastQC** 
+**7)FastQC**
+
 open screen; open directory with trimmomatic data (trimm_data); use the command:
 ```
 for i in *fastq.gz ; do fastqc $i; done
