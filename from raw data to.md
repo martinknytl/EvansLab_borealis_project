@@ -3,7 +3,9 @@
 ```
 scp -r ben@graham.computecanada.ca:/home/ben/project/ben/2019_XB_gonad_RNAseq/ .
 ```
-**2)FastQC: open screen; open directory with downloaded data; use the command:**
+**2)FastQC** 
+
+open screen; open directory with downloaded data; use the command:
 ```
 for i in *fastq.gz ; do fastqc $i; done
 ```
