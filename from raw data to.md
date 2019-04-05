@@ -68,3 +68,8 @@ open all html files using `open *`
 
 **8) Trinity**
 
+Before I start Trinity run, I will like to combine all the R1_paired together and all the R2_paired together by doing:
+
+`cat *_R1_paired.fastq.gz > XBO_R1.fastq.gz`
+`cat *_R2_paired.fastq.gz > XBO_R2.fastq.gz`
+
