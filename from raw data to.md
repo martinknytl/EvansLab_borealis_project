@@ -75,6 +75,9 @@ cat *_R1_paired.fastq.gz > XBO_R1.fastq.gz
 cat *_R2_paired.fastq.gz > XBO_R2.fastq.gz
 ```
 
+check which info has the smallest number of users:
+go on the head `ctrl + a d` and type `usage`
+
 How to run trinity:
 ```bash
 time /usr/local/trinity/current/Trinity --seqType fq  --left /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO_R1.fastq.gz --right /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO_R2.fastq.gz --CPU 20 --inchworm_cpu 6 --full_cleanup --max_memory 200G --min_kmer_cov 2 --output /home/martin/borealis_gonad_transcriptome/data/trinity_data/borealis_gonad_transcriptome_trinityOut
