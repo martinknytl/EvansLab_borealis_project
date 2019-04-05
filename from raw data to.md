@@ -77,7 +77,7 @@ cat *_R2_paired.fastq.gz > XBO_R2.fastq.gz
 
 b) check which info has the smallest number of users:
 
-go on the head `ctrl + a d` and type `usage`
+go on the head `ctrl + ad` and type `usage`
 
 c) `mkdir trinity_data`
 
