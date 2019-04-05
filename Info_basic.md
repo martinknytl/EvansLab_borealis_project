@@ -37,7 +37,7 @@ If you want to clean the screen, do `clear`.
 
 If you want to cancel job type `control + c`.
 
-If you want to logout, do `logout`, `exit` or `control + d`
+If you want to logout, do `logout`, `exit` or `control + d`.
 
 If you need help about ls `ls --help`.
 
