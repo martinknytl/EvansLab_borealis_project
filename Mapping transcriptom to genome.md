@@ -47,7 +47,7 @@ gmap -D /home/songxy/scratch/tropicalis_transcriptome/tropicalis_genome/db_gmap_
 If you want to run the software on info:
 ```
 gmap -D /home/martin/laevis_genome/XLA_indexed -d XLA_indexed -A -B 5 -t 15 -f samse /home/martin/borealis_gonad_transcriptome/data/trinity_data/borealis_gonad_transcriptome_trinityOut.Trinity.fasta
-...
+```
 
 - first line of 
 
