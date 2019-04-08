@@ -43,7 +43,7 @@ If you want to stop job temporalily, do `control` + `z`
 
 If you want to begin job again, type `bg`
 
-Kill a job type `kill` \<job name\> or \<number of process\> or \<%order number\>.
+Kill a job type `kill` \<job name\> or \<number of process\> or \<%order numberof process\>.
 
 If you need help about ls `ls --help`.
 
