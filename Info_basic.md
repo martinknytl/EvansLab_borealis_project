@@ -43,6 +43,8 @@ If you want to stop job temporalily, do `control` + `z`
 
 If you want to begin job again, type `bg`
 
+Kill a job type `kill` 
+
 If you need help about ls `ls --help`.
 
 # Top
