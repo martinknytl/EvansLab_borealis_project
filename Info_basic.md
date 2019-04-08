@@ -33,11 +33,15 @@ If you want to make a directory, type `mkdir` \<directory name\>.
 
 If you want to remove a file type `rm -f `\<filename\>; to remove a directory `rm -rf`\<filename\>.
 
-If you want to clean the screen, do `clear`.
+If you want to clean the screen, type `clear`.
 
-If you want to cancel job type `control` + `c`.
+If you want to cancel job do `control` + `c`.
 
 If you want to logout, do `logout`, `exit` or `control` + `d`.
+
+If you want to stop job temporalily, do `control` + `z`
+
+If you want to begin job again, type `bg`
 
 If you need help about ls `ls --help`.
 
