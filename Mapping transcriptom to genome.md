@@ -53,15 +53,15 @@ imput types:
 
 -d, --db=STRING: Genome database
 
+outpus types:
+
 -A, --align: Show alignments
 
 -B, --batch=INT: Batch mode (default = 2)
 
 -t, --nthreads=INT: Number of worker threads
 
--f, --format=INT: other format for output
-
-outpus files:
+-f, --format=INT: other format for output (samse = SAM format (without setting paired_read bit)
 
 -S, --summary: Show summary of alignments only
 
