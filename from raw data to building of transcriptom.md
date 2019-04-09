@@ -22,12 +22,15 @@ open all html files using `open *`
 **4)Scynthe**
 
 `mkdir scynthed_data`
+
+from any folder:
 ```
-for i in *_paired_fastq.gz ; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/martin/software/scythe-master/scynthe -a /home/martin/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
+for i in /home/martin/borealis_gonad_transcriptome/data/trimm_data/*_paired.fastq.gz; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/martin/software/scythe-master/scythe -a /home/martin/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
+```
 
-for i in *fastq.gz ; do name=$(grep -o "XT[0-9]*_[A-Z][0-9]" <(echo $i)); /home/xue/software/scythe-master/scythe -a /home/xue/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/xue/tropicalis_gonad_transcriptome_Dec2018/scythed_data/$name\_scythe.fastq.gz; done
-
-
+from trimm_data as a current folder:
+```
+for i in *_paired.fastq.gz; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/martin/software/scythe-master/scythe -a /home/martin/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
 ```
 
 **5)FastQC**
