@@ -26,6 +26,7 @@ time gmap_build -g -D /home/martin/laevis_genome -d XLA_indexed /home/martin/lae
 To find out how to do mapping, you can consult two resource
 - manual: http://research-pub.gene.com/gmap/src/README
 - do `gmap --help` on info, which will give you all the options
+- gmap commands: https://wiki.gacrc.uga.edu/wiki/Gmap
 
 The way to run it in Graham:
 ```
@@ -47,18 +48,22 @@ gmap -D /home/songxy/scratch/tropicalis_transcriptome/tropicalis_genome/db_gmap_
 If you want to run the software on info:
 
 imput types:
+
 -D, --dir=directory: to gmap or set the environment variable GMAP database to point to that directory/ path, where the reference indexed genome is
 
 -d, --db=STRING: Genome database
 
 -A, --align: Show alignments
+
 -B, --batch=INT: Batch mode (default = 2)
+
 -t, --nthreads=INT: Number of worker threads
+
 -f, --format=INT: other format for output
 
 outpus files:
--S, --summary: Show summary of alignments only
 
+-S, --summary: Show summary of alignments only
 
 -b: Output in the BAM format
 
