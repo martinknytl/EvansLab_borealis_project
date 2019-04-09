@@ -18,24 +18,7 @@ scp martin@info.mcmaster.ca:/home/martin/borealis_gonad_transcriptome/data/raw_d
 ```
 open all html files using `open *`
 
-
-**4)Scynthe**
-
-`mkdir scynthed_data`
-
-from any folder:
-```
-for i in /home/martin/borealis_gonad_transcriptome/data/trimm_data/*_paired.fastq.gz; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/martin/software/scythe-master/scythe -a /home/martin/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
-```
-
-from trimm_data as a current folder:
-```
-for i in *_paired.fastq.gz; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/martin/software/scythe-master/scythe -a /home/martin/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
-```
-
-**5)FastQC**
-
-**6)Trimmomatic**
+**3)Trimmomatic**
 
 `mkdir trimm_data`
 
@@ -55,7 +38,23 @@ java -jar /usr/local/trimmomatic/trimmomatic-0.36.jar PE -phred33 -trimlog trim_
 ```
 8,12,15,16,17,19,20,21,23,24,26,27,28,29,30,31,32,33,34,35,36
 
-**7)FastQC**
+**4)FastQC**
+
+**5)Scynthe**
+
+`mkdir scynthed_data`
+
+from any folder:
+```
+for i in /home/martin/borealis_gonad_transcriptome/data/trimm_data/*_paired.fastq.gz; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/martin/software/scythe-master/scythe -a /home/martin/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
+```
+
+from trimm_data as a current folder:
+```
+for i in *_paired.fastq.gz; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/martin/software/scythe-master/scythe -a /home/martin/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
+```
+
+**6)FastQC**
 
 open screen; open directory with trimmomatic data (trimm_data); use the command:
 
