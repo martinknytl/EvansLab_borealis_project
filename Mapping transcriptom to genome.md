@@ -46,7 +46,21 @@ gmap -D /home/songxy/scratch/tropicalis_transcriptome/tropicalis_genome/db_gmap_
 ```
 If you want to run the software on info:
 
--b Output in the BAM format
+-D, --dir=directory: to gmap or set the environment variable GMAP database to point to that directory/ path, where the reference indexed genome is
+
+-d, --db=STRING: Genome database
+
+-A, --align: Show alignments
+
+-B, --batch=INT: Batch mode (default = 2)
+
+-S: Ignored for compatibility with previous samtools versions. Previously this option was required if input was in SAM format, but now the correct format is automatically detected by examining the first few characters of input
+
+-t, --nthreads=INT: Number of worker threads
+
+-f, --format=INT: other format for output
+
+-b: Output in the BAM format
 
 save as a sam file:
 ```
