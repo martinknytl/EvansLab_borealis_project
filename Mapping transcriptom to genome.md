@@ -45,8 +45,15 @@ module load samtools/1.9
 gmap -D /home/songxy/scratch/tropicalis_transcriptome/tropicalis_genome/db_gmap_tropicalis_v91 -d db_gmap_tropicalis_v91 -A -B 5 -t 15 -f samse /home/songxy/scratch/tropicalis_transcriptome/transcriptome_building/tropicalis_transcriptome_trinityOut.Trinity.SuperTrans.fasta | samtools view -S -b > /home/songxy/scratch/tropicalis_transcriptome/mapping_transcriptome_to_genome/tropicalis_denovoT_tropicalisv91_genome_gmap.bam
 ```
 If you want to run the software on info:
+
+save as a sam file:
 ```
 gmap -D /home/martin/laevis_genome/XLA_indexed -d XLA_indexed -A -B 5 -t 15 -f samse /home/martin/borealis_gonad_transcriptome/data/trinity_data/borealis_gonad_transcriptome_trinityOut.Trinity.fasta > /home/martin/borealis_gonad_transcriptome/data/gmap/borealis_gmap_output.sam
+```
+
+save as a bam file:
+```
+gmap -D /home/martin/laevis_genome/XLA_indexed -d XLA_indexed -A -B 5 -t 15 -f samse /home/martin/borealis_gonad_transcriptome/data/trinity_data/borealis_gonad_transcriptome_trinityOut.Trinity.fasta | samtools view -S -b > /home/martin/borealis_gonad_transcriptome/data/gmap/borealis_gmap_output.bam
 ```
 
 - first line of 
