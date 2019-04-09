@@ -23,7 +23,7 @@ open all html files using `open *`
 
 `mkdir scynthed_data`
 ```
-for i in *fastq.gz ; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/martin/software/scythe-master -a /home/martin/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
+for i in *fastq.gz ; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/martin/software/scythe-master/scynthe -a /home/martin/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
 
 for i in *fastq.gz ; do name=$(grep -o "XT[0-9]*_[A-Z][0-9]" <(echo $i)); /home/xue/software/scythe-master/scythe -a /home/xue/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/xue/tropicalis_gonad_transcriptome_Dec2018/scythed_data/$name\_scythe.fastq.gz; done
 
