@@ -40,7 +40,7 @@ java -jar /usr/local/trimmomatic/trimmomatic-0.36.jar PE -phred33 -trimlog trim_
 
 **4)FastQC**
 
-**5)Scynthe**
+**5)Scythe**
 
 `mkdir scynthed_data`
 
