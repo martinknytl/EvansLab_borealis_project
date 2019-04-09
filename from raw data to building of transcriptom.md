@@ -42,6 +42,16 @@ java -jar /usr/local/trimmomatic/trimmomatic-0.36.jar PE -phred33 -trimlog trim_
 
 **5)Scythe**
 
+What are the parameters
+- -a: adapter file in fasta format
+- -p: the prior contamination rate is 0.05; BenF used 0.1.
+- -o: output file name
+
+Other options:
+- -q: Illumina's quality scheme (pipeline > 1.3) is used. Sanger or Solexa (pipeline < 1.3) qualities can be specified
+- -n: one can specify the minimum match length argument with -n <integer> and 
+- -M: the minimum length of sequence (discarded less than or equal to this parameter) to keep after trimming with -M <integer>
+
 `mkdir scynthed_data`
 
 from any folder:
