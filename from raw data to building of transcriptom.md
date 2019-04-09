@@ -42,6 +42,15 @@ java -jar /usr/local/trimmomatic/trimmomatic-0.36.jar PE -phred33 -trimlog trim_
 
 **5)Scythe**
 
+downloading and instaling of software from GitHub website:
+
+https://github.com/vsbuffalo/scythe
+
+- click on "clone or download", then "download ZIP', saved in desktop as a <scythe-master.zip>
+- `mkdir software` in /home/martin
+- copy to info: `scp scythe-master.zip martin@info.mcmaster.ca:/home/martin/software`
+- unzip go to the folder /home/martin/software: `unzip scythe-master.zip`
+
 What are the parameters
 - -a: adapter file in fasta format
 - -p: the prior contamination rate is 0.05; BenF used 0.1.
