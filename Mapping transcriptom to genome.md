@@ -84,7 +84,5 @@ gmap -D /home/martin/laevis_genome/XLA_indexed -d XLA_indexed -A -B 5 -t 15 -f s
 The detail description of sam (or bam) files are here `https://samtools.github.io/hts-specs/SAMv1.pdf`.
 This is how you open a sam or bam file on info. 
 ```
-samtools view tropicalis_denovoT_tropicalisv91_genome_gmap.bam |less -S
+samtools view borealis_gmap_output.bam |less -S
 ```
-
-fff
