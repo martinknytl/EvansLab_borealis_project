@@ -24,7 +24,7 @@ The Fasta file supplied can be either in plaintext or gzipped format. Prebuilt i
 
 Usage: kallisto quant [arguments] FASTQ-files
 
-from trimm_data folder as a current folder (/home/martin/borealis_gonad_transcriptome/data/trimm_data):
+from trimm_data folder as a current folder (/home/martin/borealis_gonad_transcriptome/data/trimm_data) for individual XBO12:
 ```
 kallisto quant -i /home/martin/borealis_gonad_transcriptome/data/trinity_data/borealis_gonad_transcriptome_trinity_index -o /home/martin/borealis_gonad_transcriptome/data/callisto_quantification XBO12_R1_paired.fastq.gz XBO12_R2_paired.fastq.gz 
 ```
