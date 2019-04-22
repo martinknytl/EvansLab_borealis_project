@@ -24,6 +24,11 @@ The Fasta file supplied can be either in plaintext or gzipped format. Prebuilt i
 
 Usage: kallisto quant [arguments] FASTQ-files
 
+from trimm_data folder as a current folder (/home/martin/borealis_gonad_transcriptome/data/trimm_data):
+```
+kallisto quant -i /home/martin/borealis_gonad_transcriptome/data/trinity_data/borealis_gonad_transcriptome_trinity_index -o /home/martin/borealis_gonad_transcriptome/data/callisto_quantification XBO12_R1_paired.fastq.gz XBO12_R2_paired.fastq.gz 
+```
+
 Required arguments:
 
 - -i, --index=STRING            Filename for the kallisto index to be used for quantification
@@ -60,10 +65,6 @@ Optional arguments:
                               (required for --genomebam)
 - -c, --chromosomes             Tab separated file with chromosome names and lengths
                               (optional for --genomebam, but recommended)
-
-```
-kallisto quant -i /home/martin/borealis_gonad_transcriptome/data/trinity_data/borealis_gonad_transcriptome_trinity_index -o /home/martin/borealis_gonad_transcriptome/data/callisto_quantification XBO12_R1_paired.fastq.gz XBO12_R2_paired.fastq.gz 
-```
 
 Convert BAM to FASTA:
 
