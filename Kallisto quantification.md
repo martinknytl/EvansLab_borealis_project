@@ -33,7 +33,7 @@ Required arguments:
 
 Optional arguments:
 
-    --bias                    Perform sequence based bias correction
+-    --bias                    Perform sequence based bias correction
     
 -b, --bootstrap-samples=INT   Number of bootstrap samples (default: 0)
 
