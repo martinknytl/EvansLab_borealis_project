@@ -2,23 +2,20 @@ https://github.com/griffithlab/rnaseq_tutorial/wiki/Kallisto
 
 https://pachterlab.github.io/kallisto/manual
 
-Convert BAM to FASTA
+Convert BAM to FASTA:
 
 ```
 java -Xmx2g -jar /usr/local/picard-tools/picard.jar SamToFastq INPUT=borealis_gmap_output.bam FASTQ=borealis_gmap_output.fastq VALIDATION_STRINGENCY=LENIENT
 ```
 
+Zip the file:
+
 ```
 gzip borealis_gmap_output.fastq
 ```
 
-index
-kallisto index builds an index from a FASTA formatted file of target sequences. The arguments for the index command are:
-
-kallisto 0.45.0
-Builds a kallisto index
-
-Usage: 
+kallisto index builds an index from a FASTA formatted file of target sequences. 
+Builds a kallisto index:
 
 ```
 kallisto index --index=borealis_gmap_output_index borealis_gmap_output.fastq.gz
