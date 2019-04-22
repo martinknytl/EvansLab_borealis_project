@@ -3,7 +3,7 @@ https://github.com/griffithlab/rnaseq_tutorial/wiki/Kallisto
 https://pachterlab.github.io/kallisto/manual
 
 ***1) Kallisto index builds an index from a FASTA formatted file of target sequences. Use trinity output file for indexing.
-Builds a kallisto index:
+Builds a kallisto index:***
 
 ```
 kallisto index --index=borealis_gonad_transcriptome_trinity_index /home/martin/borealis_gonad_transcriptome/data/trinity_data/borealis_gonad_transcriptome_trinityOut.Trinity.fasta
@@ -18,7 +18,7 @@ Optional argument:
   
 The Fasta file supplied can be either in plaintext or gzipped format. Prebuilt indices constructed from Ensembl reference transcriptomes can be download from the kallisto transcriptome indices site.
 
-###2) Kallisto quantification
+###2) Kallisto quantification###
 
 Usage: kallisto quant [arguments] FASTQ-files
 
