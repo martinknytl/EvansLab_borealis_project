@@ -33,6 +33,10 @@ If you want to make a directory, type `mkdir` \<directory name\>.
 
 If you want to remove a file type `rm -f `\<filename\>; to remove a directory `rm -rf`\<filename\>.
 
+for moving folder to another folder: `mv` path/ pathII/
+
+for renaming folder/file : `mv` folder/file_name folder/file_nameII 
+
 If you want to clean the screen, type `clear`.
 
 If you want to cancel job do `control` + `c`.
