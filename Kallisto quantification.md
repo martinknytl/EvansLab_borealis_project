@@ -14,11 +14,11 @@ Zip the file:
 gzip borealis_gmap_output.fastq
 ```
 
-kallisto index builds an index from a FASTA formatted file of target sequences. 
+Kallisto index builds an index from a FASTA formatted file of target sequences. Use trinity output file for indexing.
 Builds a kallisto index:
 
 ```
-kallisto index --index=borealis_gmap_output_index borealis_gmap_output.fastq.gz
+kallisto index --index=borealis_gonad_transcriptome_trinity_index /home/martin/borealis_gonad_transcriptome/data/trinity_data/borealis_gonad_transcriptome_trinityOut.Trinity.fasta
 ```
 
 Required argument:
