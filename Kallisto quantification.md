@@ -11,11 +11,11 @@ kallisto index --index=borealis_gonad_transcriptome_trinity_index /home/martin/b
 
 Required argument:
 
--i, --index=STRING          Filename for the kallisto index to be constructed 
+- -i, --index=STRING          Filename for the kallisto index to be constructed 
 
 Optional argument:
 
--k, --kmer-size=INT         k-mer (odd) length (default: 31, max value: 31)
+- -k, --kmer-size=INT         k-mer (odd) length (default: 31, max value: 31)
     --make-unique           Replace repeated target names with unique names
   
 The Fasta file supplied can be either in plaintext or gzipped format. Prebuilt indices constructed from Ensembl reference transcriptomes can be download from the kallisto transcriptome indices site.
@@ -26,42 +26,39 @@ Usage: kallisto quant [arguments] FASTQ-files
 
 Required arguments:
 
--i, --index=STRING            Filename for the kallisto index to be used for
-                              quantification
+- -i, --index=STRING            Filename for the kallisto index to be used for quantification
                               
--o, --output-dir=STRING       Directory to write output to
+- -o, --output-dir=STRING       Directory to write output to
 
 Optional arguments:
 
 -    --bias                    Perform sequence based bias correction
     
--b, --bootstrap-samples=INT   Number of bootstrap samples (default: 0)
+- -b, --bootstrap-samples=INT   Number of bootstrap samples (default: 0)
 
-    --seed=INT                Seed for the bootstrap sampling (default: 42)
+-    --seed=INT                Seed for the bootstrap sampling (default: 42)
+
+-    --plaintext               Output plaintext instead of HDF5
     
-    --plaintext               Output plaintext instead of HDF5
+-    --fusion                  Search for fusions for Pizzly
     
-    --fusion                  Search for fusions for Pizzly
+-    --single                  Quantify single-end reads
     
-    --single                  Quantify single-end reads
-    
-    --single-overhang         Include reads where unobserved rest of fragment is
-                              predicted to lie outside a transcript
+-    --single-overhang         Include reads where unobserved rest of fragment is predicted to lie outside a transcript
                               
-    --fr-stranded             Strand specific reads, first read forward
+-    --fr-stranded             Strand specific reads, first read forward
     
-    --rf-stranded             Strand specific reads, first read reverse
+-    --rf-stranded             Strand specific reads, first read reverse
     
--l, --fragment-length=DOUBLE  Estimated average fragment length
--s, --sd=DOUBLE               Estimated standard deviation of fragment length
-                              (default: -l, -s values are estimated from paired
+- -l, --fragment-length=DOUBLE  Estimated average fragment length
+- -s, --sd=DOUBLE               Estimated standard deviation of fragment length (default: -l, -s values are estimated from paired
                                end data, but are required when using --single)
--t, --threads=INT             Number of threads to use (default: 1)
-    --pseudobam               Save pseudoalignments to transcriptome to BAM file
-    --genomebam               Project pseudoalignments to genome sorted BAM file
--g, --gtf                     GTF file for transcriptome information
+- -t, --threads=INT             Number of threads to use (default: 1)
+-     --pseudobam               Save pseudoalignments to transcriptome to BAM file
+-     --genomebam               Project pseudoalignments to genome sorted BAM file
+- -g, --gtf                     GTF file for transcriptome information
                               (required for --genomebam)
--c, --chromosomes             Tab separated file with chromosome names and lengths
+- -c, --chromosomes             Tab separated file with chromosome names and lengths
                               (optional for --genomebam, but recommended)
 
 ```
