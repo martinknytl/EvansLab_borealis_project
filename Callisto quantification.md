@@ -1,3 +1,7 @@
+https://github.com/griffithlab/rnaseq_tutorial/wiki/Kallisto
+
+https://pachterlab.github.io/kallisto/manual
+
 Convert BAM to FASTA
 
 ```
