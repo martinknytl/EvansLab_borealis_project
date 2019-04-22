@@ -18,7 +18,7 @@ Optional argument:
   
 The Fasta file supplied can be either in plaintext or gzipped format. Prebuilt indices constructed from Ensembl reference transcriptomes can be download from the kallisto transcriptome indices site.
 
-###2) Kallisto quantification###
+***2) Kallisto quantification***
 
 Usage: kallisto quant [arguments] FASTQ-files
 
