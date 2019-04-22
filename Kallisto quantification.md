@@ -10,9 +10,11 @@ kallisto index --index=borealis_gonad_transcriptome_trinity_index /home/martin/b
 ```
 
 Required argument:
+
 -i, --index=STRING          Filename for the kallisto index to be constructed 
 
 Optional argument:
+
 -k, --kmer-size=INT         k-mer (odd) length (default: 31, max value: 31)
     --make-unique           Replace repeated target names with unique names
   
@@ -23,11 +25,14 @@ The Fasta file supplied can be either in plaintext or gzipped format. Prebuilt i
 Usage: kallisto quant [arguments] FASTQ-files
 
 Required arguments:
+
 -i, --index=STRING            Filename for the kallisto index to be used for
                               quantification
+                              
 -o, --output-dir=STRING       Directory to write output to
 
 Optional arguments:
+
     --bias                    Perform sequence based bias correction
 -b, --bootstrap-samples=INT   Number of bootstrap samples (default: 0)
     --seed=INT                Seed for the bootstrap sampling (default: 42)
