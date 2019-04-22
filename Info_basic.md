@@ -25,7 +25,7 @@ If you want to view the content of content of "home" and "xxx" directory `ls /ho
 
 `ls -l /data` `ls /data` doesn't work 
 
-If you want to change a directory type `cd `\<directory path\>.
+If you want to change a directory type `cd ` \<directory path\>.
 
 If you want to know what directory you are in type `pwd`.
 
@@ -33,9 +33,9 @@ If you want to make a directory, type `mkdir` \<directory name\>.
 
 If you want to remove a file type `rm -f `\<filename\>; to remove a directory `rm -rf`\<filename\>.
 
-for moving folder to another folder: `mv` path/ pathII/
+for moving folder to another folder: `mv` \<directory path\> \<directory pathII\>
 
-for renaming folder/file : `mv` folder/file_name folder/file_nameII 
+for renaming folder/file : `mv` \<folder/file name\> \<folder/file_nameII\> 
 
 If you want to clean the screen, type `clear`.
 
