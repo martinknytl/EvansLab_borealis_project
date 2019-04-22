@@ -54,8 +54,8 @@ Optional arguments:
 - -s, --sd=DOUBLE               Estimated standard deviation of fragment length (default: -l, -s values are estimated from paired
                                end data, but are required when using --single)
 - -t, --threads=INT             Number of threads to use (default: 1)
--     --pseudobam               Save pseudoalignments to transcriptome to BAM file
--     --genomebam               Project pseudoalignments to genome sorted BAM file
+-    --pseudobam               Save pseudoalignments to transcriptome to BAM file
+-    --genomebam               Project pseudoalignments to genome sorted BAM file
 - -g, --gtf                     GTF file for transcriptome information
                               (required for --genomebam)
 - -c, --chromosomes             Tab separated file with chromosome names and lengths
