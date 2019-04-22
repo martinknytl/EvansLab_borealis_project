@@ -34,15 +34,24 @@ Required arguments:
 Optional arguments:
 
     --bias                    Perform sequence based bias correction
+    
 -b, --bootstrap-samples=INT   Number of bootstrap samples (default: 0)
+
     --seed=INT                Seed for the bootstrap sampling (default: 42)
+    
     --plaintext               Output plaintext instead of HDF5
+    
     --fusion                  Search for fusions for Pizzly
+    
     --single                  Quantify single-end reads
+    
     --single-overhang         Include reads where unobserved rest of fragment is
                               predicted to lie outside a transcript
+                              
     --fr-stranded             Strand specific reads, first read forward
+    
     --rf-stranded             Strand specific reads, first read reverse
+    
 -l, --fragment-length=DOUBLE  Estimated average fragment length
 -s, --sd=DOUBLE               Estimated standard deviation of fragment length
                               (default: -l, -s values are estimated from paired
