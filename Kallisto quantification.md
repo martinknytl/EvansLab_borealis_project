@@ -29,6 +29,10 @@ from trimm_data folder as a current folder (/home/martin/borealis_gonad_transcri
 kallisto quant -i /home/martin/borealis_gonad_transcriptome/data/trinity_data/borealis_gonad_transcriptome_trinity_index -o /home/martin/borealis_gonad_transcriptome/data/callisto_quantification XBO12_R1_paired.fastq.gz XBO12_R2_paired.fastq.gz 
 ```
 
+kallisto quant -i /home/martin/borealis_gonad_transcriptome/data/trinity_data/borealis_gonad_transcriptome_trinity_index -o /home/martin/borealis_gonad_transcriptome/data/callisto_quantification XBO12_R1_paired.fastq.gz XBO12_R2_paired.fastq.gz
+
+for i in *_paired.fastq.gz; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/martin/software/scythe-master/scythe -a /home/martin/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
+
 Required arguments:
 
 - -i, --index=STRING            Filename for the kallisto index to be used for quantification
