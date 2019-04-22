@@ -62,7 +62,7 @@ Optional arguments:
                               (optional for --genomebam, but recommended)
 
 ```
-kallisto quant --index /home/martin/borealis_gonad_transcriptome/data/gmap/borealis_gmap_output.bam -o /home/martin/borealis_gonad_transcriptome/data/callisto_quantification pairA_1.fastq pairA_2.fastq pairB_1.fastq pairB_2.fastq 
+kallisto quant -i /home/martin/borealis_gonad_transcriptome/data/trinity_data/borealis_gonad_transcriptome_trinity_index -o /home/martin/borealis_gonad_transcriptome/data/callisto_quantification XBO12_R1_paired.fastq.gz XBO12_R2_paired.fastq.gz 
 ```
 
 Convert BAM to FASTA:
