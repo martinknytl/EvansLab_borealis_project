@@ -51,6 +51,8 @@ Kill a job type `kill` \<job name\> or \<number of process\> or \<%order numbero
 
 If you need help about ls `ls --help`.
 
+`du -sh dir1` how large directory is
+
 # Top
 If you want to check the status of the job, do `top`.
 
