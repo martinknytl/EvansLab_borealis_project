@@ -123,3 +123,7 @@ time /usr/local/trinity/current/Trinity --seqType fq  --left /home/martin/boreal
 cat *R1_scythe.fastq.gz > XBO_R1.fastq.gz 
 cat *R2_scythe.fastq.gz > XBO_R2.fastq.gz
 ```
+
+```
+time /usr/local/trinity/current/Trinity --seqType fq  --left /home/martin/borealis_gonad_transcriptome/data/scynthed_data/XBO_R1.fastq.gz --right /home/martin/borealis_gonad_transcriptome/data/scynthed_data/XBO_R2.fastq.gz --CPU 20 --inchworm_cpu 6 --full_cleanup --max_memory 200G --min_kmer_cov 2 --output /home/martin/borealis_gonad_transcriptome/data/trinity/trinity_data_trimmed_and_scythed/borealis_gonad_transcriptome_trinityOut
+```
