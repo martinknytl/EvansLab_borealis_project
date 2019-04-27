@@ -53,6 +53,16 @@ If you need help about ls `ls --help`.
 
 `du -sh dir1` how large directory \<dir1\> is
 
+`cat` 
+
+`cat -n` does not work
+
+`grep`
+
+`less`
+
+`tee`
+
 # Top
 If you want to check the status of the job, do `top`.
 
