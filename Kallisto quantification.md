@@ -26,7 +26,23 @@ Usage: kallisto quant [arguments] FASTQ-files
 
 from trimm_data folder as a current folder (/home/martin/borealis_gonad_transcriptome/data/trimm_data) for individual XBO12:
 ```
-kallisto quant -i /home/martin/borealis_gonad_transcriptome/data/trinity_data/borealis_gonad_transcriptome_trinity_index -o /home/martin/borealis_gonad_transcriptome/data/kallisto /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO12_R1_paired.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO12_R2_paired.fastq.gz 
+kallisto quant -i /home/martin/borealis_gonad_transcriptome/data/trinity/trinity_data_trimmed/borealis_gonad_transcriptome_trinity_index -o /home/martin/borealis_gonad_transcriptome/data/kallisto /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO12_R1_paired.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO12_R2_paired.fastq.gz 
+
+#do it for all files
+for i in /home/martin/borealis_gonad_transcriptome/data/trimm_data/*_R1_paired.fastq.gz; 
+    do name=$(grep -o "XBO[0-9]*" <(echo $i)); 
+    R1=$name\_R2_paired.fastq.gz; 
+    R2=$name\_R2_paired.fastq.gz; 
+    kallisto quant  
+      -i /home/martin/borealis_gonad_transcriptome/data/trinity/trinity_data_trimmed/borealis_gonad_transcriptome_trinity_index 
+      -o /home/martin/borealis_gonad_transcriptome/data/kallisto/$name
+      /home/martin/borealis_gonad_transcriptome/data/trimm_data/$R1
+      /home/martin/borealis_gonad_transcriptome/data/trimm_data/$R2; done
+
+
+
+
+
 ```
 
 kallisto quant -i /home/martin/borealis_gonad_transcriptome/data/trinity_data/borealis_gonad_transcriptome_trinity_index -o /home/martin/borealis_gonad_transcriptome/data/callisto_quantification XBO12_R1_paired.fastq.gz XBO12_R2_paired.fastq.gz
