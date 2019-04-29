@@ -37,7 +37,8 @@ for i in /home/martin/borealis_gonad_transcriptome/data/trimm_data/*_R1_paired.f
       -i /home/martin/borealis_gonad_transcriptome/data/trinity/trinity_data_trimmed/borealis_gonad_transcriptome_trinity_index 
       -o /home/martin/borealis_gonad_transcriptome/data/kallisto/$name
       /home/martin/borealis_gonad_transcriptome/data/trimm_data/$R1
-      /home/martin/borealis_gonad_transcriptome/data/trimm_data/$R2; done
+      /home/martin/borealis_gonad_transcriptome/data/trimm_data/$R2; 
+      done
 
 
 
