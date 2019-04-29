@@ -28,7 +28,7 @@ from trimm_data folder as a current folder (/home/martin/borealis_gonad_transcri
 ```
 kallisto quant -i /home/martin/borealis_gonad_transcriptome/data/trinity/trinity_data_trimmed/borealis_gonad_transcriptome_trinity_index -o /home/martin/borealis_gonad_transcriptome/data/kallisto /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO12_R1_paired.fastq.gz /home/martin/borealis_gonad_transcriptome/data/trimm_data/XBO12_R2_paired.fastq.gz 
 
-#do it for all files
+#do it for all samples (info115 screen kallisto)
 for i in /home/martin/borealis_gonad_transcriptome/data/trimm_data/*_R1_paired.fastq.gz; 
     do name=$(grep -o "XBO[0-9]*" <(echo $i)); 
     R1=$name\_R2_paired.fastq.gz; 
