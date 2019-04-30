@@ -31,7 +31,7 @@ kallisto quant -i /home/martin/borealis_gonad_transcriptome/data/trinity/trinity
 #do it for all samples (info115 screen kallisto)
 for i in /home/martin/borealis_gonad_transcriptome/data/trimm_data/*_R1_paired.fastq.gz; 
     do name=$(grep -o "XBO[0-9]*" <(echo $i)); 
-    R1=$name\_R2_paired.fastq.gz; 
+    R1=$name\_R1_paired.fastq.gz; 
     R2=$name\_R2_paired.fastq.gz; 
     kallisto quant  
       -i /home/martin/borealis_gonad_transcriptome/data/trinity/trinity_data_trimmed/borealis_gonad_transcriptome_trinity_index 
@@ -39,17 +39,10 @@ for i in /home/martin/borealis_gonad_transcriptome/data/trimm_data/*_R1_paired.f
       /home/martin/borealis_gonad_transcriptome/data/trimm_data/$R1
       /home/martin/borealis_gonad_transcriptome/data/trimm_data/$R2; 
       done
-
-
-
-
-
 ```
 
 kallisto quant -i /home/martin/borealis_gonad_transcriptome/data/trinity_data/borealis_gonad_transcriptome_trinity_index -o /home/martin/borealis_gonad_transcriptome/data/callisto_quantification XBO12_R1_paired.fastq.gz XBO12_R2_paired.fastq.gz
 
-Scynte:
-/home/xue/software/scythe-master/scythe -a /home/xue/software/scythe-master/illumina_adapters.fa -p 0.1 -o /home/xue/tropicalis_gonad_transcriptome_Dec2018/raw_data/XT10_R1_scythe.fastq.gz /home/xue/tropicalis_gonad_transcriptome_Dec2018/raw_data/XT10_R1.fastq.gz
 
 
 for i in *_paired.fastq.gz; do name=$(grep -o "XBO[0-9]*_[A-Z][0-9]" <(echo $i)); /home/martin/software/scythe-master/scythe -a /home/martin/software/scythe-master/illumina_adapters.fa -p 0.1 $i | gzip > /home/martin/borealis_gonad_transcriptome/data/scynthed_data/$name\_scythe.fastq.gz; done
