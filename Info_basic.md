@@ -17,39 +17,39 @@ Never run on the head, which is 'youname@infoserv'.
 
 To go into one of the machine, do `rsh info113` or `rsh info114` 
 
-If you want to cancel a command type `Command .`
+To cancel a command type `Command .`
 
-If you want to view the contents of a current directory type `ls` (list files).
+To view the contents of a current directory type `ls` (list files).
 
-If you want to view the content of content of "home" and "xxx" directory `ls /home /xxx`
+To view the content of content of "home" and "xxx" directory `ls /home /xxx`
 
 `ls -l /data` `ls /data` doesn't work 
 
-If you want to change a directory type `cd ` \<directory path\>.
+To change a directory type `cd ` \<directory path\>.
 
-If you want to know what directory you are in type `pwd`.
+To know what directory you are in type `pwd`.
 
-If you want to make a directory, type `mkdir` \<directory name\>.
+To make a directory, type `mkdir` \<directory name\>.
 
-If you want to remove a file type `rm -f `\<filename\>; to remove a directory `rm -rf`\<filename\>.
+To remove a file type `rm -f `\<filename\>; to remove a directory `rm -rf`\<filename\>.
 
 for moving folder to another folder: `mv` \<directory path\> \<directory pathII\>
 
 for renaming folder/file : `mv` \<folder/file name\> \<folder/file_nameII\> 
 
-If you want to clean the screen, type `clear`.
+To clean the screen, type `clear`.
 
-If you want to cancel job do `control` + `c`.
+To cancel job do `control` + `c`.
 
-If you want to logout, do `logout`, `exit` or `control` + `d`.
+To logout, do `logout`, `exit` or `control` + `d`.
 
-If you want to stop job temporalily, do `control` + `z`
+To stop job temporalily, do `control` + `z`
 
-If you want to begin job again, type `bg`
+To begin job again, type `bg`
 
 Kill a job type `kill` \<job name\> or \<number of process\> or \<%order numberof process\>.
 
-If you need help about ls `ls --help`.
+To help about ls `ls --help`.
 
 `du -sh dir1` how large directory \<dir1\> is
 
