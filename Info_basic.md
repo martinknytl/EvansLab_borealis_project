@@ -17,41 +17,47 @@ Never run on the head, which is 'youname@infoserv'.
 
 To go into one of the machine, do `rsh info113` or `rsh info114` 
 
-To cancel a command type `Command .`
+`bg` = begin job again
 
-To view the contents of a current directory type `ls` (list files).
+`Command .` = cancel a command type
 
-To view the content of content of "home" and "xxx" directory `ls /home /xxx`
+`cd ` \<directory path\> = change a directory
+
+`clear` clean the screen
+
+`control` + `c` cancel job 
+
+`control` + `z` = stop job temporalily
+
+`cp original.txt duplicate.txt` copy and rename
+
+`du -sh dir1` how large directory \<dir1\> is
+
+"home" and "xxx" directory `ls /home /xxx`= view the content of content of home
+
+`kill` \<job name\> or \<number of process\> or \<%order numberof process\> = Kill a job
+
+`logout`, `exit` or `control` + `d` = logout
+
+`ls` = list files = view the contents of a current directory
 
 `ls -l /data` `ls /data` doesn't work 
 
-To change a directory type `cd ` \<directory path\>.
+`ls --help` = help about ls
 
-To know what directory you are in type `pwd`.
+`mkdir` \<directory name\> make a directory, type 
 
-To make a directory, type `mkdir` \<directory name\>.
+`mv` \<directory path\> \<directory pathII\> moving folder to another folder
 
-To remove a file type `rm -f `\<filename\>; to remove a directory `rm -rf`\<filename\>.
+`mv` \<folder/file name\> \<folder/file_nameII\> renaming folder/file
 
-for moving folder to another folder: `mv` \<directory path\> \<directory pathII\>
+`pwd` = print working directory = what directory you are in  
 
-for renaming folder/file : `mv` \<folder/file name\> \<folder/file_nameII\> 
+`rm -f `\<filename\>; to remove a directory `rm -rf`\<filename\> remove a file type
 
-To clean the screen, type `clear`.
 
-To cancel job do `control` + `c`.
 
-To logout, do `logout`, `exit` or `control` + `d`.
 
-To stop job temporalily, do `control` + `z`
-
-To begin job again, type `bg`
-
-Kill a job type `kill` \<job name\> or \<number of process\> or \<%order numberof process\>.
-
-To help about ls `ls --help`.
-
-`du -sh dir1` how large directory \<dir1\> is
 
 `cat` 
 
