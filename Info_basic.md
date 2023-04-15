@@ -53,6 +53,8 @@ To go into one of the machine, do `rsh info113` or `rsh info114`
 
 `pwd` = print working directory = what directory you are in  
 
+`rm filename` = remove filename
+
 `rm -f `\<filename\> = remove a directory 
 
 `rm -rf`\<filename\> = remove a file type
