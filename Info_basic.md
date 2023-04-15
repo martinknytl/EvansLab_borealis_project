@@ -23,15 +23,15 @@ To go into one of the machine, do `rsh info113` or `rsh info114`
 
 `cd ` \<directory path\> = change a directory
 
-`clear` clean the screen
+`clear` = clean the screen
 
-`control` + `c` cancel job 
+`control` + `c` = cancel job 
 
 `control` + `z` = stop job temporalily
 
-`cp original.txt duplicate.txt` copy and rename
+`cp original.txt duplicate.txt` = copy = copy and rename
 
-`du -sh dir1` how large directory \<dir1\> is
+`du -sh dir1` = how large directory \<dir1\> is
 
 "home" and "xxx" directory `ls /home /xxx`= view the content of content of home
 
@@ -45,17 +45,17 @@ To go into one of the machine, do `rsh info113` or `rsh info114`
 
 `ls --help` = help about ls
 
-`mkdir` \<directory name\> make a directory, type 
+`mkdir` \<directory name\> = make a directory
 
-`mv` \<directory path\> \<directory pathII\> moving folder to another folder
+`mv` \<directory path\> \<directory pathII\> = moving folder to another folder
 
-`mv` \<folder/file name\> \<folder/file_nameII\> renaming folder/file
+`mv` \<folder/file name\> \<folder/file_nameII\> = renaming folder/file
 
 `pwd` = print working directory = what directory you are in  
 
-`rm -f `\<filename\>; to remove a directory `rm -rf`\<filename\> remove a file type
+`rm -f `\<filename\> = remove a directory 
 
-
+`rm -rf`\<filename\> = remove a file type
 
 
 
