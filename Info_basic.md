@@ -33,6 +33,8 @@ To go into one of the machine, do `rsh info113` or `rsh info114`
 
 `du -sh dir1` = how large directory \<dir1\> is
 
+`fg` transfer job from background to foreground
+
 "home" and "xxx" directory `ls /home /xxx`= view the content of content of home
 
 `kill` \<job name\> or \<number of process\> or \<%order numberof process\> = Kill a job
