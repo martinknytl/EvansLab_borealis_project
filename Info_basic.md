@@ -25,10 +25,6 @@ To go into one of the machine, do `rsh info113` or `rsh info114`
 
 `clear` = clean the screen
 
-`control` + `c` = cancel job 
-
-`control` + `z` = stop job temporalily
-
 `cp original.txt duplicate.txt` = copy = copy and rename
 
 `du -sh dir1` = how large directory \<dir1\> is
@@ -61,9 +57,10 @@ To go into one of the machine, do `rsh info113` or `rsh info114`
 
 `rm -rf`\<filename\> = remove a file type
 
-control + z = stop of task
-control + c = cancel of task
 
+`control` + `c` = cancel job 
+
+`control` + `z` = stop job temporalily
 
 
 `cat` 
