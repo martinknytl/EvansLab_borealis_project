@@ -61,6 +61,9 @@ To go into one of the machine, do `rsh info113` or `rsh info114`
 
 `rm -rf`\<filename\> = remove a file type
 
+control + z = stop of task
+control + c = cancel of task
+
 
 
 `cat` 
