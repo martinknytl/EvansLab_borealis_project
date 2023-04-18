@@ -58,9 +58,9 @@ To go into one of the machine, do `rsh info113` or `rsh info114`
 `rm -rf`\<filename\> = remove a file type
 
 
-`control` + `c` = cancel job 
+`ctrl` + `c` = cancel job 
 
-`control` + `z` = stop job temporalily
+`ctrl` + `z` = stop job temporalily
 
 
 `cat` 
