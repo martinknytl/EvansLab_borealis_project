@@ -57,12 +57,6 @@ To go into one of the machine, do `rsh info113` or `rsh info114`
 
 `rm -rf`\<filename\> = remove a file type
 
-
-`ctrl` + `c` = cancel job 
-
-`ctrl` + `z` = stop job temporalily
-
-
 `cat` 
 
 `cat -n` does not work
@@ -72,6 +66,15 @@ To go into one of the machine, do `rsh info113` or `rsh info114`
 `less`
 
 `tee`
+
+### keyboard abbreviations
+
+`ctrl` + `c` = cancel job 
+
+`ctrl` + `z` = stop job temporalily
+
+
+
 
 # Top
 If you want to check the status of the job, do `top`.
