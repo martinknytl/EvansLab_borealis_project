@@ -70,7 +70,9 @@ To go into one of the machine, do `rsh info113` or `rsh info114`
 ### keyboard abbreviations
 
 `ctrl` + `c` = cancel job, leave emacs
+
 `ctrl` + `x` = save file
+
 `ctrl` + `z` = stop job temporalily
 
 
