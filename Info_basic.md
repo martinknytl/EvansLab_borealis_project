@@ -39,7 +39,9 @@ To go into one of the machine, do `rsh info113` or `rsh info114`
 
 `ls` = list files = view the contents of a current directory
 
-`ls -l /data` `ls /data` doesn't work 
+`ls -l /data` `ls /data` doesn't work
+
+`ls -lh` detailed list files
 
 `ls --help` = help about ls
 
