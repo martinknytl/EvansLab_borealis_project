@@ -70,7 +70,9 @@ To go into one of the machine, do `rsh info113` or `rsh info114`
 `tee`
 
 ### keyboard shortcuts
-`ctrl` + `a` = sent prompt on the beginning
+`ctrl` + `a` = send prompt on the beginning of line
+
+`ctrl` + `e` = send prompt on the end of line
 
 `ctrl` + `c` = cancel job, leave emacs
 
