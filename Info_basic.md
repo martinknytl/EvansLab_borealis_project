@@ -3,6 +3,17 @@
 ```
 cat file | tr -cs A-Za-z `\n` \ tr A-Z a-z | sort | uniq -c | sort -rn | head -x
 ```
+```
+history
+```
+you can see numbers of processes and open it
+
+muscle
+bash (new sheel)
+```
+alias grep='grep -P --color=auto'
+```
+
 
 # Basic terms
 bash (vykonavatel textovych prikazu) = comand line interpreter
