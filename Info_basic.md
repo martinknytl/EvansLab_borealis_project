@@ -1,3 +1,9 @@
+# Brian lessons
+
+```
+cat file | tr -cs A-Za-z `\n` \ tr A-Z a-z | sort | uniq -c | sort -rn | head -x
+```
+
 # Basic terms
 bash (vykonavatel textovych prikazu) = comand line interpreter
 
