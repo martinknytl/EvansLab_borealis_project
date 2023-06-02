@@ -13,7 +13,19 @@ bash (new sheel)
 ```
 alias grep='grep -P --color=auto'
 ```
+cmd -flags --flags arg arg arg
 
+pwd
+cd
+ls
+file names - case sensitivity
+top 10  ommands: cp, mv, rm, top, rmdir, mkdir, cat, more
+zip, gy, by, xz, tgz
+top utilitities: headm tail, wc, sort, grep, find, tr, agrep 
+
+ssh, scp
+
+alias
 
 # Basic terms
 bash (vykonavatel textovych prikazu) = comand line interpreter
