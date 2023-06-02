@@ -37,6 +37,31 @@ backslash removes all aliases, colours etc. ```\ls```
 nano ~/.bashrc
 ```
 
+editors:
+
+smart and powerful:
+vi
+emacs
+
+stupid:
+pluma
+xedit
+pico
+nano
+red
+gedit
+
+```vi newfile```
+```vimtutor```
+
+exit "esc" ":" "q" "!"
+
+"esc" botton
+
+"daw" delete whole word
+
+"d" + "arrpw" more functions
+
 # Basic terms
 bash (vykonavatel textovych prikazu) = comand line interpreter
 
