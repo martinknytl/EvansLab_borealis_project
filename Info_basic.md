@@ -27,6 +27,16 @@ ssh, scp
 
 alias
 
+toss = trashed 
+"cat > /dev/null"
+```
+function fnd() { find . -maxdepth 2 -iname "*$1*"; }
+```
+backslash removes all aliases, colours etc. ```\ls```
+```
+nano ~/.bashrc
+```
+
 # Basic terms
 bash (vykonavatel textovych prikazu) = comand line interpreter
 
